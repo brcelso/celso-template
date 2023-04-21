@@ -18,7 +18,7 @@ export default function IndexPage() {
           Enjoy it.
         </h1>
         <p className="max-w-[700px] text-lg text-muted-foreground sm:text-xl">
-          This is my template.
+          This is my page.
           Just Code.
         </p>
       </div>
