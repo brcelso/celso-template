@@ -2,11 +2,17 @@ import Link from "next/link"
 
 import { siteConfig } from "@/config/site"
 import { buttonVariants } from "@/components/ui/button"
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
 export default function IndexPage() {
   return (
+
     <section className="container grid items-center gap-6 pb-8 pt-6 md:py-10">
       <div className="flex max-w-[980px] flex-col items-start gap-2">
+      <Avatar>
+      <AvatarImage src="https://github.com/brcelso.png" />
+      <AvatarFallback>CN</AvatarFallback>
+      </Avatar>
         <h1 className="text-3xl font-extrabold leading-tight tracking-tighter sm:text-3xl md:text-5xl lg:text-6xl">
           Welcome to the New Age. <br className="hidden sm:inline" />
           Enjoy it.
@@ -67,7 +73,11 @@ export default function IndexPage() {
         >
           WhatsApp
         </Link>
+        
         </div>
     </section>
+    
   )
 }
+
+
